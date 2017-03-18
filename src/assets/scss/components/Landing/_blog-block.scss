@@ -7,6 +7,30 @@
     padding-top: 35px;
     padding-bottom: 35px;
     border-bottom: 2px solid #a2a2a2;
+    a {
+      color: #753d9d;
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: -15px;
+    }
+    .blog-name {
+      p {
+        color: #a2a2a2;
+      }
+      .dark {
+        color: #0d113d;
+        font-size: 15px;
+        font-weight: 400;
+        margin-left: 1px;
+      }
+    }
+    .blog-date {
+      p {
+        color: #a2a2a2;
+        font-size: 16px;
+      }
+    }
     &:hover {
       color: #fff;
       background: #753d9d;
@@ -17,25 +41,6 @@
       }
       p, .dark {
         color: #fff;
-      }
-    }
-    a {
-      color: #753d9d;
-      text-transform: capitalize;
-      font-size: 18px;
-      margin-left: -15px;
-    }
-    .blog-name p {
-      color: #a2a2a2;
-    }
-    .blog-name .dark {
-      color: #0d113d;
-      font-size: 15px;
-    }
-    .blog-date {
-      p {
-        color: #a2a2a2;
-        font-size: 16px;
       }
     }
   }

@@ -53,9 +53,17 @@
 @import 'vendor/slick';
 
 @import 'components/resets';
+@import 'components/footer';
+@import 'components/media';
+
 @import 'components/Landing/header-styles';
+@import 'components/Landing/welcome-block';
+@import 'components/Landing/features-block';
+@import 'components/Landing/mobile-first';
+@import 'components/Landing/services-block';
+@import 'components/Landing/support-block';
+@import 'components/Landing/contact-block';
 @import 'components/Landing/blog-block';
-@import 'components/Landing/footer';
-@import 'components/Landing/media';
+
 
 @import 'components/Landing/all';

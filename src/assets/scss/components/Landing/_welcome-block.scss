@@ -1,0 +1,23 @@
+.welcome-block {
+  padding: 70px 0;
+  border-bottom: 3px solid #e0e0e0;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 40px;
+  .dark {
+    color: #0d113d;
+    font-weight: 600;
+  }
+  .magenta {
+    color: #753d9d;
+    font-weight: 600;
+  }
+  .light {
+    color: #0d113d;
+    font-weight: 300;
+  }
+  p {
+    margin-top: 40px;
+  }
+}

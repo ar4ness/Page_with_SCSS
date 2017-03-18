@@ -1,0 +1,22 @@
+.contact-block {
+  background-color: #753d9d;
+  margin-bottom: 50px;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .contact-block-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    h3 {
+      color: #fff;
+    }
+    .bordered-btn.btn-magenta-reverse {
+      margin-top: 5px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

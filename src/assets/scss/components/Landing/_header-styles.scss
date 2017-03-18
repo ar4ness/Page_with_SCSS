@@ -1,9 +1,9 @@
 .article-top {
-  /*background: url(../img/Shape-141.jpg) no-repeat;*/
+  background: url("../img/Shape-141.jpg") no-repeat;
   padding: 40px 0 180px;
   margin-bottom: 80px;
   position: relative;
-  background: transparent;
+  /*background: transparent;*/
   .header-slider {
     position: absolute;
     left: 0;
@@ -12,13 +12,13 @@
     .header-slade-wrapper {
       min-height: 763px;
       height: 100%;
-      .slide-1 {
+      &.slide-1 {
         background: url("../img/header-picture-1.jpg") no-repeat 50%/cover;
       }
-      .slide-2 {
+      &.slide-2 {
         background: url("../img/header-picture-2.jpg") no-repeat 50%/cover;
       }
-      .slide-3 {
+      &.slide-3 {
         background: url("../img/header-picture-3.jpg") no-repeat 50%/cover;
       }
     }
@@ -64,9 +64,9 @@
     color: #753d9d;
   }
 }
-  .header-wrapper {
-    position: relative;
-  }
+.header-wrapper {
+  position: relative;
+}
 
   /*.header-wrapper:before {
     content: " ";
@@ -78,10 +78,11 @@
     background-color: rgba(25, 11, 35, 0.6);
   }*/
 
-  .header-slider .slick-list {
+.header-slider {
+  .slick-list {
     margin: 0 -15px;
   }
-  .header-slider .slick-arrow {
+  .slick-arrow {
     color: transparent;
     font-size: 0;
     position: absolute;
@@ -89,3 +90,4 @@
     height: 20px;
     top: 0;
   }
+}
