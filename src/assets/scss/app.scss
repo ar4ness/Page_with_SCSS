@@ -45,7 +45,7 @@
 //@include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
- @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 //@include motion-ui-transitions;
 //@include motion-ui-animations;
@@ -53,9 +53,11 @@
 @import 'vendor/slick';
 
 @import 'components/resets';
-@import 'components/Landing/header-styles';
-@import 'components/Landing/blog-block';
-@import 'components/Landing/footer';
-@import 'components/Landing/media';
+@import 'components/header-styles';
+@import 'components/footer';
+@import 'components/media';
 
+@import 'components/Landing/blog-block';
 @import 'components/Landing/all';
+
+@import 'components/contact/map-holder';
