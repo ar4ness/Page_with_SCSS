@@ -2,9 +2,7 @@
   margin-top: 65px;
   margin-bottom: 45px;
   border-bottom: 3px solid #e0e0e0;
-  h3 {
-    margin-bottom: 25px;
-  }
+  h3 {  margin-bottom: 25px;  }
   .services-benef {
     margin-bottom: 30px;
     height: 100%;
@@ -35,50 +33,7 @@
         background: linear-gradient(to bottom, rgba(41, 137, 216, 0) 0%, rgba(117, 61, 157, 0.6) 100%);
         transition: all ease-in-out 0.5s;
       }
-      .st-holder {
-        position: absolute;
-        color: #ffffff;
-        /* bottom: 10px;*/
-        left: 15px;
-        top: 300px;
-        z-index: 1;
-        transition: top ease-in-out 0.5s;
-        &:after {
-          content: '';
-          left: 0;
-          bottom: -50px;
-          min-width: 120px;
-          position: absolute;
-          transition: all ease-in-out 0.5s;
-        }
-        .hor-line {
-          width: 120px;
-          background: #ffffff;
-          border-radius: 4px;
-          height: 4px;
-          margin-top: 18px;
-          margin-bottom: 18px;
-        }
-        p, a {
-          color: #fff;
-          padding-right: 23px;
-        }
-      }
-      .services-block .services {
-        background: #0d113d;
-        border-radius: 4px;
-        height: 340px;
-        .all-services {
-          top: 245px;
-          left: 250px;
-          color: #fff;
-          border-radius: 4px;
-          height: 340px;
-          .hor-line {
-            width: 90px;
-          }
-        }
-      }
+
       &:hover .st-holder {
         top: 135px;
       }
@@ -90,7 +45,35 @@
   }
 }
 
-
+.st-holder {
+  position: absolute;
+  color: #ffffff;
+  /* bottom: 10px;*/
+  left: 15px;
+  top: 300px;
+  z-index: 1;
+  transition: top ease-in-out 0.5s;
+  .hor-line {
+    width: 120px;
+    background: #ffffff;
+    border-radius: 4px;
+    height: 4px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  p, a {
+    color: #fff;
+    padding-right: 23px;
+  }
+  &:after {
+    content: '';
+    left: 0;
+    bottom: -50px;
+    min-width: 120px;
+    position: absolute;
+    transition: all ease-in-out 0.5s;
+  }
+}
 .services-block .services {
   background: #0d113d;
   border-radius: 4px;
