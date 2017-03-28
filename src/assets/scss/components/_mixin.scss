@@ -1,0 +1,24 @@
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+@mixin bd-color ($color){
+  border-color: $color;
+
+}
+@mixin size($width:auto, $height:$width){
+  height: $height;
+  width: $width;
+}
+@mixin position ($position, $top: 0, $bottom: 0, $righ:0, $left:0 ) {
+  position: $position;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+}
