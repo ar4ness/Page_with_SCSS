@@ -34,7 +34,7 @@
 // @include foundation-progress-element;
 // @include foundation-meter-element;
 //@include foundation-slider;
-//@include foundation-sticky;
+@include foundation-sticky;
 //@include foundation-reveal;
 //@include foundation-switch;
 //@include foundation-table;
@@ -56,6 +56,7 @@
 @import 'components/header-styles';
 @import 'components/footer';
 @import 'components/media';
+@import 'components/mixin';
 
 @import 'components/Landing/blog-block';
 @import 'components/Landing/all';

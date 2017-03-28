@@ -15,10 +15,36 @@
   height: $height;
   width: $width;
 }
-@mixin position ($position, $top: 0, $bottom: 0, $righ:0, $left:0 ) {
+@mixin position ($position:absolute, $top: auto, $right:auto, $bottom: auto, $left:auto ) {
   position: $position;
   top: $top;
   bottom: $bottom;
   right: $right;
   left: $left;
+}
+@mixin horline ($width:auto, $height:5px, $color:#753d9d, $bd-radius: 0, $top: 100%, $right: auto, $bottom: auto, $left:0) {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    top: $top;
+    left: $left;
+    height: $height;
+    width: $width;
+    background: $color;
+    border-radius: $bd-radius;
+  }
+}
+@mixin horline ($width, $height, $background, $bd-radius: 0, $position-main:absolute ) {
+  position: relative;
+  &:after {
+    @include position ($position:$position-main, $top: auto, $right:auto, $bottom: auto, $left:auto );
+    content: '';
+    top: $top;
+    left: $left;
+    height: $height;
+    width: $width;
+    background: $background;
+    border-radius: $bd-radius;
+  }
 }
