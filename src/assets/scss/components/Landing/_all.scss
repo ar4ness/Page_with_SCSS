@@ -17,7 +17,7 @@
 }
 .bordered-btn.btn-white {
   @include clearfix;
-  @include size($height: 100%, 50px);
+ // @include size($height: 100%, 50px);
   border-color: #fff;
 }
 .bordered-btn.btn-white:hover {

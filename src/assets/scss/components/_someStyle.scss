@@ -1,0 +1,46 @@
+
+#green-sect {
+  background-color: greenyellow;
+  padding: 40px 0 40px;
+}
+
+.sticky-container{
+  width:100%;
+  background-color: #0a0a0a;
+  padding: 40px 0 40px;
+}
+
+#text-sect {
+  font-size:30px;
+  line-height:40px;
+}
+
+.accordion-holder li{
+  display: block;
+}
+
+
+
+.accordion-holder {
+  h2 {
+    color: $violet;
+  }
+  li {
+    border-bottom: 2px solid $light-gray;
+  }
+}
+
+
+.accordion-title {
+&::before {
+  font-family: "Fontawesome";
+  position: absolute;
+  top: 50%;
+  #{$global-right}: 1rem;
+  margin-top: -0.5rem;
+  content: '\f107';
+}
+.is-active > &::before {
+  content: '\f106';
+}
+}
