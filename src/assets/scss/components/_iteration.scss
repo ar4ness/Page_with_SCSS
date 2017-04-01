@@ -1,0 +1,85 @@
+//http://hugogiraudel.com/2013/07/15/understanding-sass-lists/
+//http://thesassway.com/intermediate/if-for-each-while
+$width: 40;
+.container1 {
+  background-color: lightgray;
+  padding: 15px;
+  margin: 30px;
+  @for $i from 1 to 6 {
+    .iteration-#{$i} {
+      height: 40px;
+      background-color: #000;
+      width: #{$width * $i}px;
+    }
+  }
+}
+
+.container2 {
+  background-color: #cad3c4;
+  padding: 15px;
+  margin: 30px;
+  @each $className in (first second third fourth fifth) {
+    .#{$className} {
+      background-color: darkgray;
+      height: 40px;
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 10px;
+      &:before {
+      content:'#{$className}';
+    }
+    }
+  }
+}
+.container3 {
+  background-color: lightblue;
+  padding: 15px;
+  margin: 30px;
+  @each $className in (
+    first yellow red,
+    second magenta blue,
+    third black white,
+    fourth orange cyan,
+    fifth pink green
+  ) {
+    .#{nth($className,1)} {
+      background-color: #{nth($className,2)};
+      height: 40px;
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 10px;
+      &:before {
+      content:'#{nth($className, 1)}';
+        color:#{nth($className,3)}
+      }
+    }
+  }
+}
+.container4 {
+  background-color: #d2bbe6;
+  padding: 15px;
+  margin: 30px;
+  @each $className in (
+    first yellow red,
+    second magenta blue,
+    third black white,
+    fourth grey cyan,
+    fifth orange green
+  ) {
+    .#{nth($className,1)} {
+      background-color: #{nth($className,2)};
+      height: 40px;
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 10px;
+      &:before {
+      content:'#{nth($className, 1)}';
+        color:#{nth($className,3)}
+      }
+    }
+  }
+}
+
+@if $left  {}
+@else if $right {}
+@else{}
