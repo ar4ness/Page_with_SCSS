@@ -84,3 +84,30 @@
   font-style: normal;
 
 }
+
+
+
+
+
+
+//$font-face: (regular: $regular, bold:$bold, semibold:$semibold, medium:$medium, light:$light, extralight:$extralight);
+//$font-face: (extralight:200, light:300, regular:400, medium:500, semibold:600, bold:700 );
+
+@mixin font($font-family, $font-face, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+    src: url('../fonts/#{$font-family}-#{$font-face}.eot');
+    src: url('../fonts/#{$font-family}-#{$font-face}.eot?#iefix') format('embedded-opentype');
+    url('../fonts/#{$font-family}-#{$font-face}.woff2') format('woff2'),
+    url('../fonts/#{$font-family}-#{$font-face}.woff') format('woff'),
+    url('../fonts/#{$font-family}-#{$font-face}.ttf') format('woff'),
+    url('../fonts/#{$font-family}-#{$font-face}.svg#$font-family$font-type') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+@include font('oswald', extralight, 200, normal);
+@include font('oswald', extralight, 200, normal);
+@include font('oswald', extralight, 200, normal);
+@include font('oswald', extralight, 200, normal);
+@include font('oswald', extralight, 200, normal);
