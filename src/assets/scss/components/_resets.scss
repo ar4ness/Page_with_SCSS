@@ -1,7 +1,7 @@
 html, body {
   height: auto;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: #{$body-font-family}, sans-serif;
   width: 100%;
   line-height: 1;
 }
@@ -22,7 +22,7 @@ li {
 }
 p {
   color: #0d113d;
-  font: 300 15px/26px 'Montserrat', sans-serif;
+  font: 300 15px/26px #{$body-font-family}, sans-serif;
   margin: 0;
 }
 
